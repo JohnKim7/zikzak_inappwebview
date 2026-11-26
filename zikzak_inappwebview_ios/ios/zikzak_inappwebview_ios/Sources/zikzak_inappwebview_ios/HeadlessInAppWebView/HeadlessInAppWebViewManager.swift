@@ -23,7 +23,7 @@ public class HeadlessInAppWebViewManager: ChannelDelegate {
     /// refuse every later create for the rest of the process. The Dart-side
     /// `HeadlessWebViewRegistry` uses the same platform cap and can evict an
     /// idle instance before the ceiling is ever reached.
-    static let maxLiveWebViews = 3
+    static let maxLiveWebViews = 10
 
     var plugin: SwiftFlutterPlugin?
     var webViews: [String: HeadlessInAppWebView?] = [:]
