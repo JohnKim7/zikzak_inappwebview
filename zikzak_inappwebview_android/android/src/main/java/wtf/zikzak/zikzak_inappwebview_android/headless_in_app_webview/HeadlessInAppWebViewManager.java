@@ -54,7 +54,7 @@ public class HeadlessInAppWebViewManager extends ChannelDelegateImpl {
    * HeadlessWebViewRegistry uses the same platform cap and can evict an idle
    * instance before the ceiling is ever reached.
    */
-  public static final int maxLiveWebViews = 3;
+  public static final int maxLiveWebViews = 15;
 
   public final Map<String, HeadlessInAppWebView> webViews = new HashMap<>();
 
